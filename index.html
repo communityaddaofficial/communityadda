@@ -135,6 +135,19 @@
   .footer-bottom p { font-size:12px; color:rgba(255,255,255,0.45); }
   .footer-tagline { background:var(--orange); border-radius:4px; padding:4px 12px; font-size:12px; font-weight:700; color:#fff; }
 
+  /* ===== Instagram section ===== */
+  .insta-section { background:linear-gradient(135deg,#feda75 0%,#fa7e1e 30%,#d62976 55%,#962fbf 75%,#4f5bd5 100%); padding:56px 40px; text-align:center; }
+  .insta-card { max-width:560px; margin:0 auto; background:rgba(255,255,255,0.95); border-radius:18px; padding:36px 32px; }
+  .insta-icon { width:56px; height:56px; margin:0 auto 16px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#feda75,#d62976,#4f5bd5); border-radius:16px; font-size:28px; }
+  .insta-card h3 { font-size:22px; font-weight:800; color:var(--navy); margin-bottom:8px; }
+  .insta-card p { font-size:14px; color:var(--muted); margin-bottom:22px; line-height:1.6; }
+  .insta-btn { display:inline-flex; align-items:center; gap:8px; background:linear-gradient(135deg,#feda75,#d62976,#4f5bd5); color:#fff; text-decoration:none; padding:13px 28px; border-radius:30px; font-weight:700; font-size:14px; }
+
+  @media (max-width: 768px) {
+    .insta-section { padding:40px 20px; }
+    .insta-card { padding:28px 22px; }
+  }
+
   /* ===== Responsive overrides ===== */
   @media (max-width: 900px) {
     .hero-title { font-size:38px; }
@@ -229,6 +242,7 @@
     <a href="sell.html">Sell on CA</a>
     <a href="#categories">Categories</a>
     <a href="#about">About</a>
+    <a href="mailto:communityadda.official@gmail.com">Contact Us</a>
   </div>
   <button class="nav-cta" onclick="document.getElementById('signup').scrollIntoView({behavior:'smooth'})">Start Selling Free</button>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
@@ -397,7 +411,7 @@
         <select id="fCategory"><option value="">Select your category</option><option>Artisan / Craftsperson</option><option>Farmer / Agriculture</option><option>Weaver / Textile</option><option>Designer / Fashion</option><option>MSME / Small Business</option><option>Startup</option><option>Retailer</option><option>Local Brand</option></select>
       </div>
       <div class="form-group"><label>District</label>
-        <select id="fDistrict"><option value="">Select your district</option><option>Bhubaneswar</option><option>Cuttack</option><option>Puri</option><option>Sambalpur</option><option>Berhampur</option><option>Rourkela</option><option>Koraput</option><option>Other</option></select>
+        <select id="fDistrict"><option value="">Select your district</option><option>Angul</option><option>Balangir</option><option>Balasore</option><option>Bargarh</option><option>Bhadrak</option><option>Boudh</option><option>Cuttack</option><option>Deogarh</option><option>Dhenkanal</option><option>Gajapati</option><option>Ganjam</option><option>Jagatsinghpur</option><option>Jajpur</option><option>Jharsuguda</option><option>Kalahandi</option><option>Kandhamal</option><option>Kendrapara</option><option>Kendujhar (Keonjhar)</option><option>Khordha</option><option>Koraput</option><option>Malkangiri</option><option>Mayurbhanj</option><option>Nabarangpur</option><option>Nayagarh</option><option>Nuapada</option><option>Puri</option><option>Rayagada</option><option>Sambalpur</option><option>Subarnapur</option><option>Sundargarh</option></select>
       </div>
       <button class="submit-btn" id="submitBtn" onclick="submitRegistration()">Register My Free Store →</button>
       <div class="form-note">By registering, you agree to our Terms of Service &amp; Privacy Policy. 🔒</div>
@@ -410,6 +424,15 @@
     <div class="section-label">About Us</div>
     <h2 class="section-title">Built in Odisha, For Odisha</h2>
     <p class="section-sub">CommunityAdda was founded with one simple belief — that the artisans, farmers, weavers, and small businesses who shape Odisha's economy deserve a marketplace that doesn't take a cut of their hard work. We're building a platform where every seller keeps 100% of what they earn, where local pride meets nationwide reach, and where commerce strengthens community instead of competing with it. This is just the beginning — and we're growing it together with the people who make Odisha what it is.</p>
+  </div>
+</section>
+
+<section class="insta-section">
+  <div class="insta-card">
+    <div class="insta-icon">📷</div>
+    <h3>Follow Us on Instagram</h3>
+    <p>Get the latest updates, seller spotlights, and behind-the-scenes moments from CommunityAdda.</p>
+    <a class="insta-btn" href="https://www.instagram.com/communityadda?utm_source=qr" target="_blank" rel="noopener">@communityadda →</a>
   </div>
 </section>
 
